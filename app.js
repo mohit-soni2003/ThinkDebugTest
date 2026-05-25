@@ -18,6 +18,7 @@ app.use("/auth",require("./routes/authRoutes"))
 app.use("/user",require("./routes/userRoutes"))
 app.use("/product",require("./routes/productRoutes"))
 app.use("/admin",require("./routes/adminRoutes"))
+app.use("/order",require("./routes/orderRoutes"))
 
 
 app.get("/", (req,res)=>{
