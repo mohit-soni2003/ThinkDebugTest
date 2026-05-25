@@ -1,6 +1,7 @@
 const express = require("express");
 const connectDB = require("./config/dbconfig")
 const cookieParser = require("cookie-parser");
+const cors = require("cors");
 
 require("dotenv").config();
 
@@ -9,8 +10,9 @@ require("dotenv").config();
 
 const port =  process.env.PORT||3000;
 const app = express()
-connectDB();
 
+connectDB();
+app.use(cors());
 app.use(express.json());    
 app.use(cookieParser());
 
@@ -22,7 +24,7 @@ app.use("/order",require("./routes/orderRoutes"))
 
 
 app.get("/", (req,res)=>{
-    res.send("WELCOME TO THE MOHIT SERVER")
+    res.send("--------->------->WELCOME TO THE SERVER---->---->")
 })
 app.get("/test", (req,res)=>{
     res.send("SERVER  IS RUNNING FINE ON THE TEST COMPLETED....")
