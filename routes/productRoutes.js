@@ -224,7 +224,7 @@ router.patch(
 router.delete(
     "/delete/:id",
     authMiddleware,
-    authorizeRoles("seller", "admin"),
+    authorizeRoles(["seller", "admin"]),
     async (req, res) => {
 
         try {
