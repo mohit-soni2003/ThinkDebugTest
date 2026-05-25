@@ -147,9 +147,7 @@ router.get(
 // | order           | String  | Sorting order (`asc` or `desc`)               | `asc`   |
 
 
-// ============================================================
-// 1. SELLER-WISE REVENUE AND TOTAL ORDERS
-// ============================================================
+// SELLER-WISE REVENUE AND TOTAL ORDERS
 
 router.get(
     "/analytics/seller-revenue",
@@ -248,9 +246,7 @@ router.get(
 );
 
 
-// ============================================================
-// 2. TOP 5 PRODUCTS BY QUANTITY SOLD
-// ============================================================
+//  TOP 5 PRODUCTS BY QUANTITY SOLD
 
 router.get(
     "/analytics/top-products",
@@ -332,9 +328,9 @@ router.get(
 );
 
 
-// ============================================================
-// 3. MONTHLY REVENUE GROUPED BY MONTH & YEAR
-// ============================================================
+
+// . MONTHLY REVENUE GROUPED BY MONTH & YEAR
+
 
 router.get(
     "/analytics/monthly-revenue",
@@ -396,9 +392,8 @@ router.get(
 );
 
 
-// ============================================================
-// 4. ADMIN DASHBOARD SUMMARY
-// ============================================================
+
+// ADMIN DASHBOARD SUMMARY
 
 router.get(
     "/analytics/dashboard-summary",
@@ -462,9 +457,8 @@ router.get(
 );
 
 
-// ============================================================
-// 5. LOW STOCK REPORT PER SELLER
-// ============================================================
+
+// LOW STOCK REPORT PER SELLER
 
 router.get(
     "/analytics/low-stock",
